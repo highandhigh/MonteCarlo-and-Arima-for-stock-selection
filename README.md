@@ -1,5 +1,7 @@
 # MonteCarlo and Arima for stock selection
 
+See an article about the code on <a href="http://www.tulipquant.com/2016/06/18/montecarlo-and-arima-for-stock-selection/">tulipQuant</a>.
+
 The idea of the trading algorithm will be the following:
 <ul>
  	<li>Given a day, for each stock of a certain index, select the best ARIMA model for this stock.</li>
@@ -76,11 +78,9 @@ The code is quite straightforward. The whole code is available on GitHub, or in 
 
 So, is this strategy better than the buy-and-hold strategy? Since the code is <em>really</em> slow, I wasn't able to run it for a big period of time. I only backtested it with data from the end of 2014, to nowadays. The returns are shown in the following chart:
 
-<div style="text-align: center;"><img src="http://www.tulipquant.com/wp-content/uploads/2016/06/arima.png" alt="arima" width="467" height="356" class="alignnone size-full wp-image-89" /></div>
+<div style="text-align: center;"><img src="https://raw.githubusercontent.com/bolorsociedad/MonteCarlo-and-Arima-for-stock-selection/master/arima.png"/></div>
 
 The strategy behaved really well, and in this period the cumulative return was 1399.08%, which is really impressie. I did test it with some other small periods, and the returns were equally impressive. I was not able to test it for long periods, due to the speed of the code. However, if someone wants to test it, he is welcome to share the results obtained.
-
-I have uploaded an <a href="http://www.tulipquant.com/wp-content/uploads/2016/06/returns.xlsx">Excel spreadsheet</a> with the returns of this strategy in this time period.
 
 <h1>The whole code</h1>
 
